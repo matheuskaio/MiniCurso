@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiniCurso</title>
+  </head>
+  <body>
+    <button id="novoAluno">Adicionar</button>
+  </body>
+  <script>
+    //CONST
+    //NÃO PODE REATRIBUIR VALOR NOVAMENTE QUANDO É CONST
+    const a = 5;
+    a = 4;
+
+    // MAS PODE MUTAR UMA VARIÁVEL
+
+    const aluno = { nome: "Zoio" };
+
+    aluno.nome = "Outro Nome";
+
+    //LET
+    function testeLet(val) {
+      let y = 2;
+      if (x > 5) {
+        console.log(x, y);
+      }
+    }
+    teste(10);
+    console.log(y); //ERRO PELO FATO DE NÃO ESTAR DENTRO DO ESCOPO ONDE O Y FOI DECLARADO
+  </script>
+</html>

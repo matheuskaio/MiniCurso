@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minicurso</title>
+  </head>
+  <body></body>
+  <script>
+    // AND, OR, NOT
+
+    var nota = 7,
+      matricula = 2017555,
+      disciplina = "BD";
+
+    var situacao;
+    if (disciplina === "BD" && nota >= 7) {
+      situacao = "Aprovado";
+    } else {
+      situacao = "Reprovado";
+    }
+    console.log(situacao);
+    situacao = disciplina === "BD" && nota >= 7;
+    console.log(situacao);
+
+    // CONDIÇÃO TERNÁRIA
+
+    var res = disciplina === "BD" && nota >= 7 ? "Aprovado" : "Reprovado";
+    console.log(res);
+  </script>
+</html>

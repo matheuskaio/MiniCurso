@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiniCurso</title>
+  </head>
+  <body></body>
+  <script>
+    const arrayNumeros = [1, 2, 3, 4, 6, 8];
+    const newArrayNumeros = arrayNumeros.map(function(item, index) {
+      return (item + index) * 2;
+    });
+
+    console.log(newArrayNumeros);
+
+    const sum = arrayNumeros.reduce(function(total, next) {
+      return total + next;
+    });
+
+    console.log(sum);
+
+    const filter = arrayNumeros.filter(function(item) {
+      return item % 2 === 0;
+    });
+
+    console.log(filter);
+
+    const find = arrayNumeros.find(function(item) {
+      return item === 8;
+    });
+
+    console.log(find);
+  </script>
+</html>

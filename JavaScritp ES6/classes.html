@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiniCurso</title>
+  </head>
+  <body>
+    <button id="novoAluno">Adicionar</button>
+  </body>
+  <script>
+    class ListaAlunos {
+      constructor() {
+        this.alunos = [];
+      }
+
+      addAluno() {
+        this.alunos.push("Aluno");
+        console.log(this.alunos);
+      }
+    }
+
+    const MinhaLista = new ListaAlunos();
+    document.getElementById("novoAluno").onclick = function() {
+      MinhaLista.addAluno();
+    };
+
+    // HERANÇA
+    class Lista {
+      constructor() {
+        this.data = [];
+      }
+      add(data) {
+        this.data.push(data);
+        console.log(this.data);
+      }
+    }
+
+    class ListaAlunosHeranca extends Lista {
+      constructor() {
+        //Chamando o construtor da classe pai
+        super();
+        this.matricula = 123;
+      }
+      mostraMatricula() {
+        console.log(this.matricula);
+      }
+    }
+
+    var MinhaListaHeranca = new ListaAlunosHeranca();
+    document.getElementById("novoAluno").onclick = function() {
+      MinhaListaHeranca.add("Novo Aluno");
+    };
+  </script>
+</html>

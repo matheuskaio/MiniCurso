@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiniCurso</title>
+  </head>
+  <body></body>
+  <script>
+    const animal = {
+      nome: "Kick Buttowski",
+      idade: 8,
+      endereco: {
+        cidade: "Nova Cruz",
+        estado: "RN"
+      }
+    };
+
+    const nome = animal.nome;
+    const idade = animal.idade;
+    const cidade = animal.endereco.cidade;
+
+    const {nome,idade,endereco: { cidade }} = animal;
+    console.log(nome);
+    console.log(idade);
+    console.log(cidade);
+
+    function mostraNome({ nome, idade }) {
+      console.log("AQUI");
+      console.log(nome, idade);
+    }
+
+    mostraNome(animal);
+  </script>
+</html>
